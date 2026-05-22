@@ -5,19 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MetabolicOS</title>
   <style>
+    *, *::before, *::after { box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-           background: #0a0a0a; color: #ffffff; display: flex; align-items: center;
-           justify-content: center; min-height: 100vh; margin: 0; text-align: center; }
-    img.logo { width: 280px; max-width: 80vw; margin-bottom: 12px; }
-    a { color: #0ea5e9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+           background: #0a0a0a; color: #ffffff; margin: 0; padding: 0; }
+
+    .hero { display: flex; flex-direction: column; align-items: center;
+            justify-content: center; min-height: 100vh; text-align: center;
+            padding: 60px 24px; }
+
+    img.logo { width: 420px; max-width: 85vw; margin-bottom: 20px; }
+
+    .tagline { font-size: 1.1rem; color: #8e8e93; margin: 0 0 40px; }
+
+    .description { max-width: 600px; font-size: 1.1rem; line-height: 1.75;
+                   color: #c0c0c0; margin: 0 auto 56px; }
+    .description em { color: #ffffff; font-style: normal; }
+
+    img.screenshot { width: 320px; max-width: 80vw; border-radius: 32px;
+                     box-shadow: 0 40px 80px rgba(0,0,0,0.6); margin-bottom: 64px; }
+
+    .links { font-size: 13px; color: #48484a; }
+    .links a { color: #48484a; text-decoration: none; }
+    .links a:hover { color: #8e8e93; }
   </style>
 </head>
 <body>
-  <div>
+  <div class="hero">
     <img class="logo" src="/logo.png" alt="MetabolicOS">
-    <p>Your gout flare risk, decoded daily.</p>
-    <p><a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a></p>
+    <p class="tagline">Your gout flare risk, decoded daily.</p>
+
+    <p class="description">
+      Most people find out about a gout flare when the pain hits.
+      <em>MetabolicOS changes that.</em>
+      It connects your sleep, heart rate variability, hydration, diet, and lab results
+      into a single real-time risk score — and tells you what to do about it
+      before the flare starts.
+    </p>
+
+    <img class="screenshot" src="/app-screenshot.png" alt="MetabolicOS app screenshot">
+
+    <div class="links">
+      <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a>
+    </div>
   </div>
 </body>
 </html>
