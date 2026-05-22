@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – MetabolicOS</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           background: #0a0a0a; color: #e5e5e5; margin: 0; padding: 0; line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    nav { margin-bottom: 40px; }
+    nav a { color: #0ea5e9; text-decoration: none; font-size: 14px; }
+    nav a:hover { text-decoration: underline; }
+    h1 { font-size: 2rem; font-weight: 700; color: #ffffff; margin-bottom: 4px; }
+    .updated { font-size: 13px; color: #8e8e93; margin-bottom: 40px; }
+    h2 { font-size: 1.1rem; font-weight: 600; color: #ffffff; margin-top: 40px; margin-bottom: 8px;
+         padding-bottom: 6px; border-bottom: 1px solid #222; }
+    h3 { font-size: 0.95rem; font-weight: 600; color: #c0c0c0; margin-top: 20px; margin-bottom: 4px; }
+    p { margin: 12px 0; color: #c0c0c0; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; color: #c0c0c0; }
+    a { color: #0ea5e9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #222;
+              font-size: 13px; color: #8e8e93; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav><a href="/">← MetabolicOS</a></nav>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <h2>Overview</h2>
+    <p>MetabolicOS ("the app") is a gout flare risk monitoring tool. We take your health data seriously. This policy explains exactly what we collect, why, and how it's handled.</p>
+
+    <h2>What We Collect</h2>
+
+    <h3>On your device (stored locally)</h3>
+    <ul>
+      <li>Age range, prior gout flare history, and baseline uric acid level you enter during setup</li>
+      <li>Symptom logs and purine intake notes you record</li>
+      <li>Hydration logs</li>
+      <li>Lab results you enter manually</li>
+      <li>Your username (hashed password — we cannot recover it)</li>
+    </ul>
+
+    <h3>From Apple HealthKit (with your permission)</h3>
+    <ul>
+      <li>Heart rate variability (HRV/SDNN)</li>
+      <li>Sleep analysis data</li>
+      <li>Blood glucose readings</li>
+      <li>Active energy burned</li>
+    </ul>
+
+    <h3>From your camera/photo library (with your permission)</h3>
+    <p>Menu images you choose to photograph for the dining co-pilot feature. These are processed for text and not stored beyond the session.</p>
+
+    <h3>Sent to our servers for risk analysis</h3>
+    <p>Your anonymized health metrics (HRV, sleep score, hydration, symptoms, labs) are sent to our backend to generate your gout flare risk assessment. This data is transmitted over encrypted HTTPS and is not linked to your name or email.</p>
+
+    <h3>Integration interest (optional)</h3>
+    <p>If you tap "Request" for Oura or WHOOP integration, your in-app username and an anonymous device ID are logged so we can follow up. This is entirely voluntary.</p>
+
+    <h2>What We Do Not Collect</h2>
+    <ul>
+      <li>Your name, email address, or contact information</li>
+      <li>Precise location</li>
+      <li>Advertising identifiers</li>
+      <li>Browsing history or data from other apps</li>
+      <li>Any HealthKit data for advertising or data brokering purposes (prohibited by Apple and this policy)</li>
+    </ul>
+
+    <h2>How Your Data Is Used</h2>
+    <p>Health data collected from HealthKit and your manual entries is used solely to compute your personalized gout flare risk score and generate wellness insights within the app. It is never sold, shared with advertisers, or used for any purpose other than providing the app's core functionality.</p>
+
+    <h2>Data Storage</h2>
+    <ul>
+      <li>Health and log data is stored locally on your device using Apple's SwiftData framework.</li>
+      <li>If you have iCloud enabled, your data syncs across your devices via iCloud (subject to Apple's iCloud privacy policy). You can disable this in your device's iCloud settings.</li>
+      <li>Risk assessment requests are processed on our backend server and are not persistently stored after the response is returned.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>The app uses the following third-party infrastructure:</p>
+    <ul>
+      <li><strong>Railway</strong> (railway.app) — hosts our backend API. Data in transit is encrypted. Railway's privacy policy applies to infrastructure-level processing.</li>
+      <li><strong>Apple iCloud</strong> — optional sync. Apple's privacy policy applies.</li>
+      <li><strong>OpenAI API</strong> — used by our backend to assist with menu analysis and lab parsing. Menu text and lab text you submit may be processed by OpenAI. OpenAI does not use API data to train models per their API usage policy.</li>
+    </ul>
+    <p>We do not use any third-party analytics SDKs, advertising SDKs, or crash reporting services.</p>
+
+    <h2>HealthKit</h2>
+    <p>We access HealthKit data only to provide gout risk insights directly to you. We do not share HealthKit data with third parties except as described above (anonymized metrics sent to our own backend). We do not use HealthKit data for advertising or with data brokers.</p>
+
+    <h2>Data Deletion</h2>
+    <p>Your local data can be deleted at any time by deleting the app from your device. To request deletion of any server-side records (integration interest logs), email us at <a href="mailto:support@metabolicos.health">support@metabolicos.health</a> and we will remove them within 30 days.</p>
+    <p>This app is not directed at children under 13 and we do not knowingly collect data from children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we make material changes, we will update the "Last updated" date above. Continued use of the app after changes constitutes acceptance.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Email us at <a href="mailto:support@metabolicos.health">support@metabolicos.health</a></p>
+
+    <div class="footer">© 2026 MetabolicOS. All rights reserved.</div>
+  </div>
+</body>
+</html>
