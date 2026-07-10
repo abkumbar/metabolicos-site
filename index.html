@@ -44,8 +44,14 @@
                margin: 0 0 26px; }
 
     .description { max-width: 580px; font-size: clamp(1.15rem, 1.1rem + 0.28vw, 1.35rem);
-                   line-height: 1.7; color: var(--muted); margin: 0 0 40px; }
+                   line-height: 1.7; color: var(--muted); margin: 0 0 28px; }
     .description em { color: var(--text); font-style: normal; font-weight: 600; }
+
+    .features { display: grid; gap: 14px; margin: 0 0 34px; }
+    .feature { padding-left: 14px; border-left: 2px solid rgba(255, 138, 43, 0.42); }
+    .feature h2 { margin: 0 0 3px; color: var(--text); font-size: 0.82rem;
+                  line-height: 1.35; letter-spacing: 0.08em; text-transform: uppercase; }
+    .feature p { margin: 0; color: var(--muted); font-size: 0.96rem; line-height: 1.55; }
 
     .visual { position: relative; display: flex; justify-content: flex-end; min-width: 0; }
     .visual::before { content: ""; position: absolute; inset: 8% -8% 6% 12%;
@@ -83,6 +89,7 @@
       img.logo { width: 100%; }
       .tagline { margin-bottom: 20px; }
       .description { font-size: 1.05rem; line-height: 1.65; }
+      .feature p { font-size: 0.94rem; }
       .visual-card { padding: 12px; border-radius: 26px; }
       img.screenshot { width: 100%; }
     }
@@ -96,17 +103,36 @@
           <img class="logo" src="/logo.png" alt="MetabolicOS">
         </div>
 
-        <p class="tagline">Your gout flare risk, decoded daily.</p>
+        <p class="tagline">Gout prevention starts with hydration.</p>
 
         <p class="description">
-          Most people find out about a gout flare when the pain hits.
-          <em>MetabolicOS changes that.</em>
-          It connects your sleep, heart rate variability, hydration, diet, and lab results
-          into a single real-time risk score — and tells you what to do about it
-          before the flare starts.
+          MetabolicOS helps you prevent gout flares by making one simple habit
+          the center of your day: <em>drinking enough water.</em>
+          Smart hydration targets adapt to your current risk level, so high-risk
+          days push you to hydrate more aggressively.
         </p>
 
+        <div class="features" aria-label="MetabolicOS features">
+          <section class="feature">
+            <h2>Hydration First</h2>
+            <p>Log water in seconds and keep your daily progress visible all day.</p>
+          </section>
+          <section class="feature">
+            <h2>Know Your Risk</h2>
+            <p>Use Apple Watch and Apple Health signals to understand whether today looks Optimal, Caution, or Critical.</p>
+          </section>
+          <section class="feature">
+            <h2>Meal Co-Pilot</h2>
+            <p>Check restaurant meals for purine risk before you order.</p>
+          </section>
+          <section class="feature">
+            <h2>Track Your Labs</h2>
+            <p>Capture uric acid results from lab reports and follow trends over time.</p>
+          </section>
+        </div>
+
         <div class="links">
+          <p class="legal">MetabolicOS is a wellness tool and does not provide medical advice.</p>
           <p class="legal">© 2026 Hampi LLC. MetabolicOS is a product of Hampi LLC. All rights reserved.</p>
           <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a>
         </div>
