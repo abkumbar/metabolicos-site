@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MetabolicOS</title>
+  <title>Gout Compass</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     :root {
@@ -38,7 +38,11 @@
                  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.32);
                  backdrop-filter: blur(10px); }
 
-    img.logo { display: block; width: min(620px, 100%); max-width: 100%; }
+    .brand { display: inline-flex; align-items: center; gap: 16px; }
+    img.logo-mark { display: block; width: 76px; height: 76px; border-radius: 18px; }
+    .brand-name { font-size: clamp(2.1rem, 4vw, 3.8rem); font-weight: 700; letter-spacing: -0.055em;
+                  line-height: 1; white-space: nowrap; }
+    .brand-name span { color: var(--accent); }
 
     .tagline { font-size: 1.1rem; letter-spacing: 0.02em; color: var(--subtle);
                margin: 0 0 26px; }
@@ -86,7 +90,9 @@
 
     @media (max-width: 640px) {
       .logo-wrap { padding: 10px 12px; border-radius: 20px; margin-bottom: 22px; }
-      img.logo { width: 100%; }
+      img.logo-mark { width: 58px; height: 58px; border-radius: 14px; }
+      .brand { gap: 12px; }
+      .brand-name { font-size: clamp(1.85rem, 9vw, 2.5rem); }
       .tagline { margin-bottom: 20px; }
       .description { font-size: 1.05rem; line-height: 1.65; }
       .feature p { font-size: 0.94rem; }
@@ -100,19 +106,22 @@
     <div class="hero-shell">
       <div class="content">
         <div class="logo-wrap">
-          <img class="logo" src="/logo.png" alt="MetabolicOS">
+          <div class="brand" aria-label="Gout Compass">
+            <img class="logo-mark" src="/gout-compass-mark.png" alt="">
+            <div class="brand-name">Gout <span>Compass</span></div>
+          </div>
         </div>
 
         <p class="tagline">Gout flare risk changes throughout the day. Your plan should too.</p>
 
         <p class="description">
-          MetabolicOS is a <em>dynamic wellness canvas</em> for staying ahead of
+          Gout Compass is a <em>dynamic wellness canvas</em> for staying ahead of
           gout flare risk. It brings hydration, Apple Health signals, meals, labs, and
           symptoms into one adaptive daily view, then surfaces the right next step
           at the right time.
         </p>
 
-        <div class="features" aria-label="MetabolicOS features">
+        <div class="features" aria-label="Gout Compass features">
           <section class="feature">
             <h2>Hydration First</h2>
             <p>Keep water intake visible all day with goals that adapt to your current risk level.</p>
@@ -136,15 +145,15 @@
         </div>
 
         <div class="links">
-          <p class="legal">MetabolicOS is a wellness tool and does not provide medical advice.</p>
-          <p class="legal">© 2026 Hampi LLC. MetabolicOS is a product of Hampi LLC. All rights reserved.</p>
+          <p class="legal">Gout Compass is a wellness tool and does not provide medical advice.</p>
+          <p class="legal">© 2026 Hampi LLC. Gout Compass is a product of Hampi LLC. All rights reserved.</p>
           <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a>
         </div>
       </div>
 
       <div class="visual">
         <div class="visual-card">
-          <img class="screenshot" src="/app-screenshot.png" alt="MetabolicOS app screenshot">
+          <img class="screenshot" src="/app-screenshot.png" alt="Gout Compass app screenshot">
         </div>
       </div>
     </div>
